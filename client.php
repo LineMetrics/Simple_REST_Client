@@ -4,7 +4,7 @@ define(INPUT, "0000");                                            // your API-De
 define(ACCESS_TOKEN, "000000-62e0-00000-b13e-lkjasdoiuouoiuwe");  // your UUSEC
 
 // build url
-$url='http://bapi.linemetrics.com:8002/v1/'.ACCESS_TOKEN.'/store_value/'.INPUT.'?val=1';
+$url= 'http://bapi.linemetrics.com:8002/v1/'.ACCESS_TOKEN.'/store_value/'.INPUT.'?val=1';
 
 // Get cURL resource
 $curl = curl_init();
