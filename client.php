@@ -18,12 +18,12 @@ curl_setopt_array($curl, array(
 // Send the request & save response to $ret
 $ret = curl_exec($curl);
 
-if (empty($ret)) {
+if (!$ret) {
     // some kind of an error happened
     echo $url.'<br>';
-
     curl_close($curl); // close cURL handler
     die(curl_error($curl));
+    
 } else {
 
     $info = curl_getinfo($curl);
